@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Operadores Incrementais</h1>
+    <p id="operador1">O valor de a é: </p>: </p>
+    <p id="operador2">O valor de b é:  </p>
+    <p id="operador3">O valor de c é:  </p>
+    <p id="operador4">O valor de d é:  </p>
+    
+
+    <script>
+        var a = 1;
+        var b = 1;
+        var c = 1;
+        var d = 5;
+
+
+        a = ++a;
+        b = ++b;
+        d = --d;
+
+        for(var cont = 1; cont <= 3; cont ++){
+            c = c + cont
+        }
+
+        document.getElementById('operador1').innerHTML+=a;
+        document.getElementById('operador2').innerHTML+=b;
+        document.getElementById('operador3').innerHTML+=c;
+        document.getElementById('operador4').innerHTML+=d;
+    </script>
+</body>
+</html>
