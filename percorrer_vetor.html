@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pecorrer vetor</title>
+</head>
+<body>
+    <h1>Exemplo de Vetor</h1>
+    <p id="teste"></p>
+
+    <script>
+
+        var cores, resultado, fim, cont;
+
+        cores =['verde', 'amarelo', 'azul', 'branco'];
+        fim = cores.length;
+
+        resultado = '<ul>'
+        for (let cont = 0; cont < fim; cont++) {
+            
+            resultado += '<li>' + cores[cont] + '</li>'            
+        }
+        resultado += '</ul>'
+
+        document.getElementById("teste").innerHTML = resultado;
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itens dentro do vetor</title>
+</head>
+<body>
+
+    <h1>Exemplo de vetor</h1>
+    <p id="teste1">Quantidades de item no vetor: </p>
+    <p id="teste2">Primeiro item do vetor: </p>
+    <p id="teste3">último item do vetor: </p>
+    
+
+
+    <script>
+
+        //criando vetores
+        var cores1 =['verde', 'amarelo', 'azul', 'branco'];
+        var cores2 = new Array('laranja', 'vermelho', 'preto', 'cinza');
+
+        document.getElementById("teste1").innerHTML += cores1.length;
+        document.getElementById("teste2").innerHTML += cores1[0];
+        document.getElementById("teste3").innerHTML += cores1[cores1.length-1];
+        
+    </script>
+    
+</body>
+</html>

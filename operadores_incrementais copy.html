@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oepradores incrementais</title>
+</head>
+<body>
+    
+    <h1>Operadores Incrementais</h1>
+    <p id="teste1">O valor de a é:</p>
+    <p id="teste2">O valor de b é:</p>
+    <p id="teste3">O valor de c é:</p>
+    <p id="teste4">O valor de d é:</p>
+
+</body>
+<script>
+    var a = 1;
+    var b = 1;
+    var c = 1;
+    var d = 5;
+
+    //incremento antes aumenta antes
+    //incremento depois aumenta depois
+
+    a = ++a;
+    b = b++;
+    d = --d;
+
+    for (var cont = 1; cont <= 3; cont++) {
+        c = c + cont;
+    }
+
+    document.getElementById("teste1").innerHTML +=a;
+    document.getElementById("teste2").innerHTML +=b;
+    document.getElementById("teste3").innerHTML +=c;
+    document.getElementById("teste4").innerHTML +=d;
+
+</script>
+</html>
